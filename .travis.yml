@@ -1,15 +1,15 @@
 language: php
 php:
-  - 7.2
+- 7.2
 services:
-  - mysql
+- mysql
 before_script:
-  - composer install
-script: ./vendor/bin/phpunit ./tests
+- composer install
+script: "./vendor/bin/phpunit ./tests"
 deploy:
   provider: heroku
-  app: curso-github-cefire
+  app: s6r2-travis-heroku-2
   on: master
   skip_cleanup: true
   api_key:
-    secure: poYHhVK74kPPWPQJ9LTxsOTlG0SB0wC+zquGm6+JjZoIOPt7qNA0WPRBpj3LcgAcmuzDwXBN6jVp6HQMBNWBvBtGC7Q7JKATmp7+VVhrV7wbO3mS7qjdcS4dNfG5x6Qf4O9IXa7sOfrkJM37hg8R0OVZGsTCZebtxTacsv1VNwnyxf+z1GHVceaakv7IMEl1daFRnofMYXo6aioMjb8X7GD0GomouXrYdc/KOUyTg+zda7NmttnBlORq6Xx2I73FxGyMGn88oAoNLmNGBdF8o/fTtqr9WKjUP2yNrE5NA3oHBl1TkM8sQxcF4vEVETwouYB1Rb8ydWhzxfR6RdJHksnCaUKiiGOKFIwANVZBAFK+qUDMyqB0DaK2pJ7gt7si9zxS95BrUbiJYZ3Zz3OeJA99O9YObUdI9/UK5jMMSrIQsoCjDrd57+2GET89jQnuuRv4ynnCPI1RSxTD/6h+LoWRBlq6j+3JVFZuKqTcWwHDbpbsq0mmPlBmSQa60ADMbnPMRE3rXRwYGKvyAo8UOcnbHWPjfBcMhi2jWO4XzxgNpwf1azJMQDFpoba/fIm7YJRuRcY/nSnWcFPFSmxZ79T1cRlVO7HNrv5RoJnK8LZbZPtWBQn6tX4ikMKHhEszc3y4wC/xFHyKiVGU42nZtRzPT1ccYJoif4dEdhOXvE4=
+    secure: wLLX4UVg1BEcEwP+aTBiHqhxi1vn8py+RPisHWVV3QiDDfGzHq/0M/QZ749w3Et+6LELPVb1P8vchiFcKS8xmnIqA5mZU5yleX90stl0VxMoXMf6uF6mf/jhcaQAfHoPEv0g4X+qac5CLU0b2USfB34ydqfDVzzYJvbMuuc1eKRy/siOFjIYcA734/s1UlfO1lRWjEN2MTPQPP92c7hIPNy4dlioybuhyl8t/8VbK/8+LSdVekHtcuI8QrJqHKzy7PafaPcXu90mrYG1cGHgkxfMP3ls1TO/e12iSJzUs4PuPCpejddgbst4uXjG2zhVVVlygxBoj/t9jJ6vyZBAQ/y0gWQJhKJPGNR/7StJ1MWTYnJoso4xd3zB1ae6JkVcoB/TL16nn081NQIpWQQGh86IhC4lb/P53Vs7XiNmzdvT9/3DYGRChlavpCIwplMMCQ1DdzOQan8D3YXYHNSeqVkOKXDFLi3fSGOooyZ5a24meavoVO7BWvinb3ScfVxkRdLVEkbqiqYQpyoVT0rrWoCTgXUqrKxc/5D3SyeALMGs1sG9VDOCj+RTM2CbA10Mwm+DJrv1E4E7dd9utZj3pUM8hlHIc8sFMj7BotfTnT1Twj9Ba6HLUn0HB4pznD7TzY2eS8AzfjArxMwmktYUddYoY3ZT+7atE5oWw4NnCh4=
