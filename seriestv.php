@@ -15,7 +15,7 @@ $app->get('/seriestv', function ($req, $res, $args) {
     $series = json_decode(\Seriestv::all());
 
     // Mostramos la vista
-    return $this->view->render($res, 'seriestvlist_template.php', [
+    return $this->view->render($res, 'serietvlist_template.php', [
         'items' => $series
     ]);
 })->setName('seriestv');
